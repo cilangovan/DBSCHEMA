@@ -158,6 +158,36 @@ INSERT INTO `sales` VALUES ('2010-01-20 00:00:00','Shoes',234),('2010-01-20 00:0
 UNLOCK TABLES;
 
 --
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `username` varchar(128) DEFAULT NULL,
+  `title` varchar(128) DEFAULT NULL,
+  `firstname` varchar(128) DEFAULT NULL,
+  `lastname` varchar(128) DEFAULT NULL,
+  `dob` varchar(256) DEFAULT NULL,
+  `gender` varchar(256) DEFAULT NULL,
+  `phone` varchar(256) DEFAULT NULL,
+  `mobile` varchar(256) DEFAULT NULL,
+  `email` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES ('admin','Mr','cheran','ilango','PARAM_USER_DETAILS.DOB','Male','london','0707','mails@cheralathan.com');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `wordcloud`
 --
 
@@ -197,4 +227,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-04-13  9:55:34
+-- Dump completed on 2016-04-13 16:08:11
