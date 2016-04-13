@@ -1,2 +1,2 @@
-# ER- DBSCHEMA for asset-management
-#simple data model & proof of concept for tranportation asset management
+# DB Schema collection includes Datavault samples 
+# Public datamodels
